@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+:root {
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Viewport Sizes */
+  --Mobile: 375px;
+  --Desktop: 1440px;
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+  font-family: 'Overpass';
+  font-size: 15px;
+}
+
+p {
+  color: var(--MediumGrey);
+}
+
+
+#rating__card {
+  background-color: var(--DarkBlue);
+  color: white;
+  max-width: 50%;
+  border-radius: 15px;
+  margin: auto;
+  padding: 3rem;
+}
+
+.rating__container {
+  display: flex;
+  justify-content: center;
+}
+
+
+input[type='radio'] {
+  border: 0px;
+  background-color: var(--Orange);
+  height: 5em;
+  width: 3em;
+  cursor: pointer;
+}
+
+#submit__rating {
+  margin: auto;
+  color: var(--White);
+  background-color: var(--Orange);
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  font-size: 20px;
+  border: none;
+  border-radius: 1.2rem;
+  
+}
+
+#submit__rating:hover {
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+#top__star {
+  border-radius: 50%;
+  background-color: var(--MediumGrey);
+  padding: 1rem;
+  display: block;
+}
+
+/* Last CSS Selectors */
+.attribution { 
+  font-size: 14px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
